@@ -8,7 +8,7 @@ defmodule Mix.Tasks.Uninstall do
     Database.destroy
     Amnesia.stop
     Amnesia.Schema.destroy
-    IO.inspect File.rm_rf("Mnesia.nonode@nohost")
+    File.rm_rf("Mnesia.nonode@nohost")
 
   end
 end
